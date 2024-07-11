@@ -1,0 +1,68 @@
+Variáveis, tipos e operadores
+
+** Variáveis basicas **
+
+⭢ Tipos Inteiros:
+byte: 8 bits, pode armazenar valores de -128 a 127.
+short: 16 bits, pode armazenar valores de -32,768 a 32,767.
+int: 32 bits, pode armazenar valores de -2^31 a 2^31 - 1.
+long: 64 bits, pode armazenar valores de -2^63 a 2^63 - 1.
+
+⭢ Tipos de Ponto Flutuante:
+float: 32 bits, pode armazenar valores fracionários e tem uma faixa de aproximadamente 1.4E-45 a 3.4E+38.
+double: 64 bits, pode armazenar valores fracionários com maior precisão e tem uma faixa de aproximadamente 4.9E-324 a 1.8E+308.
+
+⭢ Tipo Caractere:
+char: 16 bits Unicode, representa um único caractere e pode armazenar valores de '\u0000' a '\uffff'.
+
+⭢ Tipo Booleano:
+boolean: pode armazenar apenas dois valores: true ou false.
+
+** Variáveis de classe e de metodo **
+
+⭢ Variáveis de Classe (ou Variáveis de Instância)
+Variáveis de classe são declaradas dentro de uma classe, mas fora de qualquer método, construtor ou bloco.
+Elas são associadas a cada instância (objeto) da classe e cada instância tem sua própria cópia dessas variáveis.
+As variáveis de classe são inicializadas quando um objeto da classe é criado usando o operador new e podem ser acessadas
+diretamente usando o nome do objeto seguido pelo nome da variável. Pode ser acessado por toda a classe
+
+⭢ Variáveis de Método (ou Variáveis Locais)
+Variáveis de método são declaradas dentro de um método, construtor ou bloco e existem apenas durante a execução do método.
+Elas não são visíveis ou acessíveis fora do método em que são declaradas e não são compartilhadas entre métodos ou instâncias.
+
+** Operadores **
+
+⭢ Operadores Aritméticos
+Realizam operações matemáticas básicas entre variáveis numéricas.
+
+Adição (+): Soma dois operandos.
+Subtração (-): Subtrai o operando direito do operando esquerdo.
+Multiplicação (*): Multiplica dois operandos.
+Divisão (/): Divide o operando esquerdo pelo operando direito.
+Módulo (%): Retorna o resto da divisão do operando esquerdo pelo operando direito.
+
+⭢ Operadores de Atribuição
+Atribuem valores a variáveis.
+
+Atribuição simples (=): Atribui o valor do operando direito ao operando esquerdo.
+Operadores compostos (+=, -= etc.): Realizam operações aritméticas e atribuem o resultado à variável à esquerda.
+
+⭢ Operadores Relacionais
+Comparação entre valores.
+
+Igual a (==): Verifica se dois operandos são iguais.
+Diferente de (!=): Verifica se dois operandos são diferentes.
+Maior que (>), Menor que (<), Maior ou igual a (>=), Menor ou igual a (<=): Realizam comparações numéricas entre operandos.
+
+⭢ Operadores Lógicos
+Operadores para combinar expressões booleanas.
+
+E lógico (&&): Retorna verdadeiro se ambas as expressões booleanas forem verdadeiras.
+OU lógico (||): Retorna verdadeiro se pelo menos uma das expressões booleanas for verdadeira.
+NÃO lógico (!): Inverte o valor booleano de uma expressão.
+
+⭢ Operadores de Incremento e Decremento
+Incrementam ou decrementam o valor de uma variável.
+
+Incremento (++): Aumenta o valor da variável em 1.
+Decremento (--): Diminui o valor da variável em 1.
