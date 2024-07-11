@@ -1,0 +1,26 @@
+Controle de fluxo
+
+** If, Else, Else if **
+São tomadas de decisões que definem o que e verdadeiro e o que e falso.
+
+➙ if: Significa que a instrucao e verdadeira
+➙ else: Significa que a dondicao e falsa
+O if pode ser declarado sozinho mas o else nao:
+if(faca uma coisa){
+}else{
+    se nao condizer, faca outra
+}
+
+** Loops **
+➙ for: O loop for e mais fixo, permite executar sentecas por um numero
+➙ while: Loop que aciona quando a condicão é verdadeira e não para ate ser falsa
+determinado de vezes. Funciona mais como um contador
+➙ dowhile: Primeiro executa e depois verifica a condicão
+
+** Break e Continue **
+São comandos de controle que são usados juntos com os controles de fluxos for e while
+➙ Break: Faz com que o codigo pare, pode ser usado em if ou no codigo em si
+➙ Continue: Ele não para a execucão e sim continua, reiniciando o codigo e pulando a condicão atual
+
+** Switch, Case e Default **
+Verifica uma variavel e age de acordo com os casos
