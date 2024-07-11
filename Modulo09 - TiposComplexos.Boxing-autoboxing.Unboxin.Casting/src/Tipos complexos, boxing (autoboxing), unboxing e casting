@@ -1,0 +1,34 @@
+Tipos complexos, boxing (autoboxing), unboxing e casting
+
+** Tipos Complexos (wrappers) **
+⭢ Tipos de Wrappers (Wrapper Types)
+Os tipos de wrappers em Java são classes que fornecem um invólucro (wrapper) para os tipos primitivos de dados.
+Isso permite que os tipos primitivos sejam tratados como objetos. Os principais tipos de wrappers em Java são:
+
+Integer: Para inteiros.
+Long: Para inteiros longos.
+Boolean: Para valores booleanos.
+Double: Para números de ponto flutuante duplo.
+Character: Para caracteres.
+Byte: Para bytes.
+Short: Para inteiros curtos.
+Float: Para números de ponto flutuante de precisão simples.
+
+Como sao classes possuem mais funcionalidades que tipos primitivos.Esses wrappers são úteis em situações onde objetos
+são necessários, como em estruturas de dados baseadas em coleções (por exemplo, ArrayList que só aceita objetos) ou quando
+se deseja utilizar métodos específicos da classe wrapper.
+
+Boxing e Unboxing
+⭢ Boxing: É o processo de converter um valor primitivo em seu equivalente de tipo wrapper correspondente.
+Por exemplo, converter um int em um Integer.
+
+⭢ Unboxing: É o processo inverso, convertendo um objeto wrapper de volta para um tipo primitivo.
+
+** Casting **
+⭢ Casting refere-se ao processo de converter um tipo de dado em outro. Existem dois tipos principais de casting em Java:
+
+⭢ Casting Implícito: É feito automaticamente pelo compilador quando nenhum dado é perdido na conversão.
+Por exemplo, converter um int em long.
+
+⭢ Casting Explícito: Requer uma sintaxe explícita e é necessário quando há perda potencial de dados na conversão.
+Por exemplo, converter um double em int.
