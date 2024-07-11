@@ -1,0 +1,81 @@
+Classes, métodos, modificadores e palavras reservadas
+
+** Nomenclatura **
+
+➔ Classes e interfaces: A primeira letra deve ser maiúsculas, caso o nome seja formado por
+mais de uma palavra, as demais palavras devem ter suaprimeira letra maiúscula. (camelCase).
+➔ Métodos: A primeira letra do método deve ser minúscula e após devemos aplicar o camelCase.
+➔ Variáveis: Da mesma forma que os métodos.
+➔ Constantes: Todas as letras devem ser maiúsculas.
+
+Metodos sao blocos de codigos que executa uma determinada tarefa ou operacao quando chamado
+
+** Modificadores de Acesso **
+
+➔ private: So pode ser acessado dentro da classe que o criou
+➔ protected: Classes no mesmo pacote ou subclasses(mesmo que em pacotes diferentes)
+➔ public: Qualquer lugar pode ser acessado
+➔ default: Acessivel apenas no mesmo pacote, usado quando nem um outro modificado de acesso
+e colocado
+
+** Palavras reservadas **
+Nomes de classes, metodos ou interfaces nao podem ser usado como nome de outros metodos ou classes
+
+** Comentarios **
+Servem para fornecer explicacoes, fazer anotacoes sobre o codigo e facilitar a compreensao
+e manutencao do programa. Ha tres principais tipo de comentarios:
+
+➔ Linha simples: omentários de linha simples são iniciados pelo símbolo // e se estendem até o final da linha.
+Eles são usados para comentar uma única linha de código ou fornecer breves explicações:
+
+// Este é um comentário de linha simples
+
+➔ Comentario de bloco: Comentários de bloco são iniciados por /* e terminam com */.
+Eles podem abranger várias linhas e são usados para comentar seções maiores de código ou para desativar temporariamente um bloco de código:
+
+/*
+Este é um comentário de bloco.
+Ele pode se estender por várias linhas.
+É útil para documentar métodos ou blocos de código.
+*/
+
+➔ Comentario de documentacao: Comentários de documentação são uma convenção especial para gerar documentação automática usando a ferramenta Javadoc.
+Eles são iniciados por /** e também podem conter tags especiais como @param, @return, @throws, entre outras, para documentar detalhes sobre métodos
+classes, e seus membros:
+
+@param: Utilizada para descrever um parâmetro de um método ou construtor.
+/**
+ * Soma dois números inteiros.
+ *
+ * @param a O primeiro número inteiro.
+ * @param b O segundo número inteiro.
+ * @return A soma dos dois números inteiros.
+*/
+
+@return: Utilizada para descrever o valor de retorno de um método.
+/**
+ * Divide dois números inteiros.
+ * @return O resultado da divisão.
+*/
+
+@throws: Utilizada para descrever as exceções (ou erros) que um método pode lançar.
+/**
+ * @throws IllegalArgumentException Se o número for negativo.
+*/
+
+@deprecated: Utilizada para marcar um método, classe ou membro como obsoleto ou não recomendado para uso, geralmente fornecendo
+informações sobre alternativas.
+/**
+ * @deprecated Use {@link #calcularRaizQuadrada(double)} em vez disso.
+*/
+
+@see: Utilizada para referenciar outras classes, métodos ou elementos relevantes que o leitor da documentação pode querer consultar.
+/**
+ * @see java.util.ArrayList
+*/
+
+@link: Você pode usar @link para criar um link para outra classe, método ou membro dentro do seu código:
+/**
+ * Este método realiza uma operação específica utilizando a classe {@link MinhaClasseUtil}.
+*/
+
