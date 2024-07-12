@@ -1,0 +1,110 @@
+Colecões
+
+** Collections **
+É um conjunto bem definido de interfaces e classes para representar e tratar grupos
+de dados como uma única unidade, que pode ser chamada de colecão ou collection. A collections
+contém os seguintes elementos:
+
+-> Interfaces: As interfaces no Java Collections Framework definem contratos que as classes
+concretas devem seguir. Elas representam tipos de coleções genéricas e definem um conjunto de métodos que as
+implementações devem fornecer.
+
+-> Implementações: As implementações são as classes concretas que fornecem a funcionalidade real para as interfaces do
+Java Collections Framework. Cada interface tem uma ou mais implementações que oferecem diferentes características de desempenho, ordem e
+eficiência.
+
+** Interfaces **
+-> Iterable: é uma interface fundamental no Java que está localizada no pacote java.lang e serve como base para permitir que um objeto
+seja iterado, ou seja, percorrido sequencialmente usando um loop for-each (também conhecido como enhanced for loop) ou através de um
+iterator.
+
+-> Collection: É a interface raiz das hierarquias de coleção. Ela define operações básicas que todas as coleções devem suportar,
+como adicionar, remover e verificar a presença de elementos.
+
+-> List<E>: Representa uma coleção ordenada (às vezes chamada de sequência) que permite elementos duplicados. Tem controle total
+sobre a posicão que cada elemento e inserido pelo indice.Implementações incluem ArrayList, LinkedList, etc.
+
+-> Set<E>: Representa uma coleção que não permite elementos duplicados. Implementações incluem HashSet, LinkedHashSet, TreeSet, etc.
+
+-> Map<K, V>: Representa uma coleção de pares chave-valor onde cada chave é única. Implementações incluem HashMap, LinkedHashMap, TreeMap, etc.
+
+-> Queue<E>: Representa uma coleção usada para armazenar elementos antes de serem processados em uma ordem específica, como FIFO (First-In-First-Out) ou por prioridade.
+Implementações incluem PriorityQueue, ArrayDeque, etc.
+
+** Implementacões - List **
+->  ArrayList
+    Descrição: ArrayList é uma lista redimensionável implementada como um array que cresce conforme necessário. É uma das implementações
+    mais utilizadas quando se precisa de uma lista dinâmica.
+
+    Características:
+
+    Suporta acesso rápido aleatório aos elementos (tempo constante O(1) para acesso).
+    Bom desempenho para leitura e acesso aos elementos, mas menos eficiente para inserções e remoções no meio da lista.
+
+-> LinkedList
+   Descrição: LinkedList é uma lista duplamente ligada, onde cada elemento é um nó que contém uma referência ao próximo e ao
+   anterior na sequência.
+
+   Características:
+
+   Permite inserções e remoções rápidas no início e no fim da lista.
+   Menos eficiente para acesso aleatório aos elementos (tempo linear O(n) para acessar um elemento em uma posição específica).
+
+** Implementacões - Deque/Queue **
+-> ArrayDeque
+   Descrição:  em Java é uma implementação eficiente da interface Deque (Double Ended Queue), que permite manipular elementos tanto no
+   início quanto no final da estrutura de dados de maneira eficiente.
+
+   Características:
+
+   estrutura de dados cresça conforme necessário à medida que mais elementos são adicionados.
+   suporta operações de inserção e remoção rápidas tanto no início quanto no final da deque.
+   não é sincronizada, o que significa que não é seguro para uso concorrente por múltiplas threads sem sincronização externa.
+
+-> PriorityQueue
+   Descrição: Nesse metodo os dados são inseridos no final da fila e removidos no comeco (FIFO), primeiro a entra primeiro a sair
+
+   Características:
+   Possui ordenacão natural
+
+** Implementacões - Set **
+
+-> HashSet
+   É uma das implementações mais comuns da interface Set. Ela armazena elementos usando uma tabela de dispersão (hash table).
+   A ordem dos elementos não é garantida.
+
+   Características:
+
+   - Sem elementos duplicados
+   - Ordem não garantida
+   - Permite elementos nulos
+   - Implementação baseada em hash: Internamente, HashSet utiliza uma tabela de dispersão (hash table) para armazenar elementos.
+     Isso proporciona acesso rápido e eficiente aos elementos,
+     com operações como adição, remoção e verificação de pertinência (contains) tendo tempo médio constante (O(1)).
+   - Iteração rápida
+
+-> TreeSet
+   TreeSet em Java é uma implementação da interface SortedSet que armazena elementos em ordem ordenada. Aqui estão algumas
+   características principais do TreeSet:
+
+   Características:
+
+   Ordenação dos elementos
+   Sem elementos duplicados
+   Permite elementos nulos
+   Interação em ordem
+
+-> LinkedHashSet
+   Em Java é uma implementação da interface Set que combina as características de um HashSet (permite elementos únicos, não sincronizado,
+   tempo médio constante para operações básicas) com a manutenção da ordem de inserção dos elementos, semelhante a uma lista encadeada.
+
+   Características:
+
+   Manutenção da ordem de inserção
+   Implementação baseada em hash
+   Sem elementos duplicados
+   Permite elementos nulos
+   Iteração rápida
+   Não sincronizado
+   
+
