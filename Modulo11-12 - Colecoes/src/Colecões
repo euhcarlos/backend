@@ -106,5 +106,55 @@ Implementações incluem PriorityQueue, ArrayDeque, etc.
    Permite elementos nulos
    Iteração rápida
    Não sincronizado
+
+** Array **
+
+   Um array em Java é uma estrutura de dados que permite armazenar um conjunto de elementos do mesmo tipo. Arrays são usados para armazenar
+   coleções de dados que podem ser acessados de forma eficiente utilizando um índice inteiro para cada elemento.
+
+   Características:
+
+   Os índices de arrays em Java começam em 0.
+   Arrays têm um tamanho fixo que é definido quando são criados.
+
+-> Array Bidimensional
+   Array bidimensional é uma estrutura de dados na qual os elementos são organizados em linhas e colunas, formando uma espécie de tabela ou matriz.
+   São dois indices um para linha outro para coluna
+
+** Implementacões - Map **
+-> HashMap
+   Um HashMap em Java é uma estrutura de dados que armazena pares chave-valor e permite o acesso rápido aos valores com base em suas chaves
+
+   Características:
+
+   Armazenamento de Pares Chave-Valor
+   Acesso Rápido
+   Não Ordenado
+   Permite Chaves Nulas
+   Iteração Eficiente
+
+-> TreeMap
+   em Java é outra implementação da interface Map, assim como o HashMap, mas com algumas diferenças fundamentais em relação à organização e
+   ordenação dos elementos armazenados.
+
+   Características:
+
+   Ordenação das Chaves
+   Estrutura de Árvore
+   Não Permite Chaves Nulas (se não for fornecido comparador)
+   Iteração Ordenada
+   Eficiência em Operações de Range
+
+-> LinkedHashMap
+    em Java é uma implementação da interface Map que estende a funcionalidade do HashMap, mas mantém a ordem de inserção dos elementos.
+    Isso significa que ele armazena os pares chave-valor na ordem em que são inseridos, permitindo iterações que refletem essa ordem de inserção.
+
+    Características:
+
+    Mantém a Ordem de Inserção
+    Dupla Ligação
+    Iteração Ordenada
+    Eficiência em Operações de Inserção e Remoção
+    Permite Chaves Nulas
    
 
