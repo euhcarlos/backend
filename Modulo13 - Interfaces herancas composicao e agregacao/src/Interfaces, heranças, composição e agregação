@@ -1,0 +1,42 @@
+Interfaces, heranças, composição e agregação
+
+** Interfaces **
+Uma interface é uma referência de tipo que define um conjunto de métodos que uma classe deve implementar.
+As interfaces são uma forma de especificar um contrato que as classes devem seguir, sem fornecer a implementação desses métodos.
+
+Características:
+
+- Definição de Métodos: Uma interface pode declarar métodos, mas não pode implementá-los
+- Implementação: Uma classe pode implementar uma ou mais interfaces, e deve fornecer a implementação dos métodos declarados.
+- Herança Múltipla: Java não permite herança múltipla de classes, mas uma classe pode implementar várias interfaces, permitindo um
+tipo de herança múltipla.
+
+** Classes Abstratas **
+Uma classe abstrata é uma classe que não pode ser instanciada diretamente. Ela serve como uma base para outras classes, permitindo a
+definição de métodos comuns e abstração de comportamentos que devem ser implementados pelas subclasses.
+
+Características:
+
+Não Pode Ser Instanciada
+Métodos Abstratos
+Métodos Concretos
+Atributos
+
+** Herenca **
+Herança é um dos pilares da Programação Orientada a Objetos (POO). Ela permite que uma classe (subclasse) herde propriedades e comportamentos
+(métodos) de outra classe (superclasse). Isso promove a reutilização de código e a criação de hierarquias de classes.
+
+Características:
+
+Reutilização de Código
+Hierarquia de Classes
+Uso da Palavra-chave
+Construtores: A subclasse pode chamar o construtor da superclasse usando super().
+Substituição de Métodos: A subclasse pode substituir (override) métodos da superclasse para fornecer implementações específicas.
+
+** Composição e Agregação **
+- Agregação: Agregação é uma forma de associação mais fraca em que um objeto contém referências a outros objetos, mas esses objetos podem existir independentemente do objeto que os contém.
+  A vida dos objetos agregados não está diretamente ligada ao objeto que os agrega.
+
+- Composição: Composição é uma forma de associação onde um objeto contém referências a outros objetos. Essa relação é forte, significando que a vida útil dos objetos compostos está ligada à vida do objeto que os contém.
+  Se o objeto pai é destruído, os objetos filhos também são.
