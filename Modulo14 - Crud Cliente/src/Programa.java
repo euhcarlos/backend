@@ -1,4 +1,3 @@
-import dao.ClienteMapDAO;
 import dao.ClienteSetDAO;
 import dao.IClienteDAO;
 import domain.Cliente;

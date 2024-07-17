@@ -1,19 +1,26 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package dao;
 
 import domain.Cliente;
-
 import java.util.Collection;
-import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
-public class ClienteMapDAO implements IClienteDAO{
-
-    public Map<Long, Cliente> map;
-
-    public ClienteMapDAO(){
-        this.map = new HashMap();
+/**
+ *
+ * @author carlos
+ */
+public class ClienteMapDAO2 implements IClienteDAO{
+    
+    private Map<Long, Cliente> map;
+    
+    public ClienteMapDAO2() {
+        map = new TreeMap<>();
     }
-
+    
     @Override
     public Boolean cadastrar(Cliente cliente) {
         if(this.map.containsKey(cliente.getCpf())){
@@ -54,4 +61,5 @@ public class ClienteMapDAO implements IClienteDAO{
     public Collection<Cliente> buscarTodos() {
         return map.values();
     }
+    
 }
